@@ -32,8 +32,22 @@
 		<script type="text/javascript">
 			debugger;
 			var name;
+			var Halo;
+			var hariSekarang = new Date();
+                        var jam = hariSekarang.getHours();
 			name = window.prompt("Name : ");
-			document.writeln("<h3>Halo " + name + "," +
+			if(jam < 12)
+                                        Hi = "Selamat Pagi ";
+                                    if(jam >= 12){
+                                        jam = jam - 12;
+
+                                        if(jam < 6)
+                                            Hi = "Selamat Siang ";
+
+                                        if(jam >= 6)
+                                            Hi = "Selamat Malam ";
+                                    }
+			document.writeln("<h3>Halo " +Halo + "" + name + "," +
 				" Selamat datang di Belajar Geometri </h3>");
 		</script>
 		<br><br>
