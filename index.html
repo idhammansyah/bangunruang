@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="icon" href="img/bangundatar.png">
+	<title>Belajar Geometri</title>
+</head>
+
+<body>
+	<!-- Image and text -->
+	<nav class="navbar navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="img/bangundatar.png" width="40" height="40" class="d-inline-block align-top"
+					alt="bangundatar">
+				Belajar Geometri
+			</a>
+			<i class="navbar-brand text-light">Created by : Idham Mansyah Awwalu</i>
+		</div>
+	</nav><br>
+
+	<div class="container">
+		<img src="img/bangundatar.png" width="400px;">
+
+		<script type="text/javascript">
+			debugger;
+			var name;
+			name = window.prompt("Name : ");
+			document.writeln("<h3>Halo " + name + "," +
+				" Selamat datang di Belajar Geometri </h3>");
+		</script>
+		<br><br>
+		<h5 class="text-center">Menghitung Volume dan luas permukaan dari Silinder, Kerucut dan Bola</h5>
+		<div class="container">
+			<div class="row">
+				<br>
+				<div class="col-sm-12">
+					<div class="card text-center">
+						<div class="card-header">
+							<ul class="nav nav-tabs card-header-tabs">
+								<li class="nav-item">
+									<a class="nav-link active" href="index.html">Tabung</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="kerucut.html">Kerucut</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="bola.html">Bola</a>
+								</li>
+							</ul>
+						</div>
+						<div class="card-body">
+							<script src="js/tabung.js"></script>
+							<form id="Tabung" name="tabung" method="post" action="">
+								<h5 class="card-title">Masukkan jari-jari Silinder :
+									<input name="r" type="text" id="r" class="form-control" autocomplete="off">
+								</h5>
+								<h5 class="card-title">Masukkan tinggi Silinder :
+									<input name="t" type="text" id="t" class="form-control" autocomplete="off">
+								</h5>
+								<input name="cari" type="button" id="cari" value="Hitung" class="btn btn-primary"
+									onclick="caritabung()" />
+								<hr>
+								<h4 class="card-title">Hasil Perhitungan</h4>
+								<p>Luas Permukaan : <input name="luas" type="text" id="luas" class="form-control">
+									</inputname>
+								</p>
+								<p>Volume : <input name="volume" type="text" id="volume" class="form-control">
+								</p>
+							</form>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>
